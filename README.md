@@ -34,7 +34,7 @@ A matrix of same dimensions as y giving the number of days since the most recent
 ## I
 A binary matrix of same dimensions as y denoting whether or not each day of the season (columns) for each bird (rows) was within 14 days of the hunt day (i.e., dsh<=14).
 ## H
-A binary matrix of same dimensions as y denoting whether or not each day ofthe season (columns) for each bird (rows) was a hunt day (i.e., dsh=14).
+A binary matrix of same dimensions as y denoting whether or not each day ofthe season (columns) for each bird (rows) was a hunt day (i.e., dsh=0).
 
 <br />
 <br />

@@ -25,7 +25,7 @@
 #   starting in 2021, 2022, and 2023. We modeled effects of TT, LP, AQP, 2022, and 2023
 #   on phi, with CF 2021 corresponding to the intercept.
 # We assume that SH will decline exponentially with time since hunt (dsh), with 
-#   SH being near 0 by 2-week post-hunt. This is indicated with the parameter I,
+#   SH being near 0 by 2-weeks post-hunt. This is indicated with the parameter I,
 #   which is given a value of 1 if the day is within 14 days of a hunt and 0 otherwise.
 # Observation depends on the ecological state and is classified into 5 categories:
 #   1) Observed alive via radiotelemetry.
@@ -33,15 +33,15 @@
 #   3) Observed harvested on hunt days (dsh=0).
 #   4) Observed dead after hunt day via crippling loss from radiotelemetry.
 #   5) Not observed (i.e., was not tracked or harvested on a given day)
-# Alive birds can either be in observation states 1 or 5 based on theta, the probability
+# Alive birds could either be in observation states 1 or 5 based on theta, the probability
 #   of tracking a bird on a given day.
-# Birds dead from harvest can be in observation states 2, 3, 4, or 5. They can be in
-#   state 5 based on 1-theta. They can be in state 3 based on theta and whether or not
-#   it is a hunt day (H=1). They can be in state 4 based on theta, not being a hunt day
-#   (H=0), and the probability of finding a crippled bird before it is scavenged (FC,
-#   i,e, the probability that correctly assigned crippled). They can be in state 2 based
+# Birds dead from harvest could be in observation states 2, 3, 4, or 5. They could be in
+#   state 5 based on 1-theta. They could be in state 3 based on theta and whether or not
+#   it was a hunt day (H=1). They could be in state 4 based on theta, not being a hunt day
+#   (H=0), and the probability of finding a crippled bird before it was scavenged (FC,
+#   i,e, the probability that correctly assigned crippled). They could be in state 2 based
 #   on theta, H=0, and 1-FC (i.e., bird was crippled but was scavenged before found).
-# Birds dead from natural causes can either be in observation states 2 or 5 based on theta.
+# Birds dead from natural causes could either be in observation states 2 or 5 based on theta.
 
 
 
@@ -51,8 +51,8 @@ load("NOBO.multistate.criploss.data.gzip")
 
 str(NOBO.multistate.criploss.data)
 
-# y: a 1707x120 multistate capture history. Rows correspond to individual bobwhite
-#   while rows correspond to days of the study period. Values of y correspond to
+# y: a 1707x120 multistate capture history matrix. Rows correspond to individual bobwhite
+#   while columns correspond to days of the study period. Values of y correspond to
 #   the 5 observation states described above.
 # nid: the total number of bobwhite tracked in the data (1707).
 # TT: a binary vector denoting if each bird in nind was located at TT.

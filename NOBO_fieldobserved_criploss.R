@@ -32,7 +32,7 @@
 
 require(nimble)
 
-load("NOBO.fieldobserved.criploss.data.pub.gzip")
+load("NOBO.fieldobserved.criploss.data.gzip")
 
 str(NOBO.fieldobserved.criploss.data)
 

@@ -69,7 +69,7 @@ A binary matrix of same dimensions as y denoting whether or not each day of the 
 <br />
 
 ## NOBO_multistate_criploss.R
-R and NIMBLE code for running the Bayesian mulistate model and for post-processing to calculate cumulative mortality and rates of crippling loss.
+R and NIMBLE code for running the Bayesian mulistate model on the harvest and radiotelemetry data and for post-processing to calculate cumulative mortality and rates of crippling loss.
 
 
 <br>
@@ -85,35 +85,23 @@ We model the number of unrecovered crippled birds (c) observed on hunts as a Bin
 <br>
 
 ## NOBO.fieldobserved.criploss.data.gzip
-Data for estimating survival, harvest mortality, and crippling loss with the multistate survival model are stored in the file "NOBO.multistate.criploss.data.gzip". 
-### y
-A 1707x120 multistate capture history matrix. Rows correspond to individual bobwhite while columns correspond to days of the study period. Values of y correspond to the 4 observation states described above. Columns refer to the 120 days within the study season (November 1 - February 28) in each of the three years. Note that capture histories were generated for each study season (winters of 2021, 2022, 2023) and stacked, so that the first column represents the observation state on the first day of each study season (November 1).
-### N
-The total number of bobwhite tracked in the dataset (1707).
-### site
-A vector giving the study site for each bird in N; 1 = CFL, 2 = TT, 3 = LP, 4 = AQP.
+Data for crippling loss with the field-observed Binomial model are stored in the file "NOBO.fieldobserved.criploss.data.gzip". 
+### c
+A vector denoting the number of crippled, unrecovered birds on each hunt.
+### N.F
+The total number of hunts (146).
+### r
+A vector denoting the number of shot and recovered birds on each hunt.
+### site.F
+A vector giving the study site for each hunt; 1 = CFL, 2 = TT, 3 = LP, 4 = AQP.
 ### N.site
 The number of unique study sites (4).
-### year
-A vector giving the study year for each bird in N. Integers correspond to the winters starting in 2021 (1), 2022 (2), and 2023 (3).
+### year.F
+A vector giving the study year for each hunt. Integers correspond to the winters starting in 2021 (1), 2022 (2), and 2023 (3).
 ### N.year
 The number of unique years in the study (3).
-### first
-A vector denoting the day of the study season (1-120) in which each bird in N was first capture, tagged, and released.
-### last
-A vector denoting the day of the study season (1-120) in which each bird in N was last tracked (i.e., period in which the bird was found dead, or after which the bird was censored due to radio failure or end of the study season).
-### A
-A 1707x55 matrix giving the days of the study season in which each bird in N (rows) was observed, starting with first and ending with last. For instance, the tenth bird was tagged on day 1, observed alive again on day 3, observed alive again on day 5, etc., until the 38th observation on day 85 when it was shot and recovered during a hunt.
-### N.A
-A vector giving the total number of observations for each bird in N. Corresponds to the length of non-NA values for each row in A.
-### D
-A matrix of same dimensions as y giving, for each day of the season (columns) and each bird in N (rows), the number of days since the most recent hunting event that the bird was exposed to. Values of 0 represent hunt days. Days before the first hunting event for a given bird were denoted with 108; however, these values do not affect the likelihood because mortality risk is only calculated when D<=14 via the indexing variable I.
-### I
-A binary matrix of same dimensions as y denoting whether or not each day of the season (columns) for each bird in N (rows) was within 14 days of the most recent hunt day (i.e., D<=14).
-### H
-A binary matrix of same dimensions as y denoting whether or not each day of the season (columns) for each bird in N (rows) was a hunt day (i.e., D=0).
 
 <br />
 
-## NOBO_multistate_criploss.R
-R and NIMBLE code for running the Bayesian mulistate model and for post-processing to calculate cumulative mortality and rates of crippling loss.
+## NOBO_fieldobserved_criploss.R
+R and NIMBLE code for running the Bayesian Binomial model on the field-observed data and for post-processing to calculate rates of crippling loss.

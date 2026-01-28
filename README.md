@@ -66,9 +66,11 @@ A binary matrix of same dimensions as y denoting whether or not each day of the 
 
 ## NOBO_multistate_criploss.R
 R and NIMBLE code for running the Bayesian mulistate model and for post-processing to calculate cumulative mortality and rates of crippling loss.
-----
+
 
 <br>
 <br>
+
+----
 
 # Field-Observed Binomial Crippling Loss Model

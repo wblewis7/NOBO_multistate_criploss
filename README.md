@@ -70,7 +70,7 @@ A binary matrix of same dimensions as y denoting whether or not each day of the 
 <br />
 
 ## NOBO_multistate_criploss.R
-R and NIMBLE code for running the Bayesian mulistate model on the harvest and radiotelemetry data and for post-processing to calculate cumulative mortality and rates of crippling loss.
+R and NIMBLE code for running the Bayesian mulistate model on the harvest and radiotelemetry data. Also includes code for post-processing to calculate cumulative mortality and rates of crippling loss.
 
 
 <br>
@@ -105,4 +105,4 @@ The number of unique years in the study (3).
 <br />
 
 ## NOBO_fieldobserved_criploss.R
-R and NIMBLE code for running the Bayesian Binomial model on the field-observed data and for post-processing to calculate rates of crippling loss.
+R and NIMBLE code for running the Bayesian Binomial model on the field-observed data. Also includes code for post-processing to calculate rates of crippling loss.

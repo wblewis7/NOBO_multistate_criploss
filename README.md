@@ -12,6 +12,7 @@ Authors: Amanda S. Cramer, Justin A. Rectenwald, William B. Lewis*, Michael A. H
 Data to estimate crippling loss in northern bobwhite (Colinus virginianus) were collected over 3 consecutive winters (2021-2022, 2022-2023, and 2023-2024) at four sites in the Southeastern United States: Central Florida (CF), Tall Timbers (TT), Livingston Place (LP), and the Albany Quail Project (AQP). Crippling loss was assessed through two methods: 1) a multistate survival model incorporating radiotelemetry and harvest data to estimate survival and crippling loss; and 2) a binomial regression model estimating crippling loss from field observations of th number of birds crippled vs. recovered.
 
 <br>
+<br>
 
 ----
 
@@ -65,3 +66,9 @@ A binary matrix of same dimensions as y denoting whether or not each day of the 
 
 ## NOBO_multistate_criploss.R
 R and NIMBLE code for running the Bayesian mulistate model and for post-processing to calculate cumulative mortality and rates of crippling loss.
+----
+
+<br>
+<br>
+
+# Field-Observed Binomial Crippling Loss Model

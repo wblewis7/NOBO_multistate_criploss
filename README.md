@@ -34,7 +34,7 @@ Birds were only observed every few days; therefore, we use an indexing variable 
 3. Observed harvested on hunt days
 4. Observed dead via radiotelemetry after hunt days from crippling loss
 
-Alive birds can only be observed in observation state 1, while birds dead from natural causes can only be observed in state 2. Birds dead from harvest can be observed in states 2, 3, or 4. On hunt days (denoted with binary variable H, with H=1 representing hunt days), birds can only be observed in observation state 3. On non-hunt days (H=0), birds can be in either observation states 2 or 4 based on the probability (psi) of a carcass being correctly identified as dead from crippling rather than from natural causes (i.e., not scavenged before found by observer).
+Alive birds can only be observed in observation state 1, while birds dead from natural causes can only be observed in state 2. Birds dead from harvest can be observed in states 2, 3, or 4. On hunt days (denoted with binary variable H, with H=1 representing hunt days), birds can only be observed in observation state 3. On non-hunt days (H=0), birds can be in either observation states 2 or 4 based on the probability (psi) of being correctly identified as dead from crippling rather than from natural causes (i.e., not scavenged before found by observer).
 
 <br>
 

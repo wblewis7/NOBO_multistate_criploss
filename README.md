@@ -1,13 +1,15 @@
 # NOBO_multistate_criploss
 R and NIMBLE code for: Estimating Crippling Loss from Harvest with Multi-State Models.
 ----
-Authors: Amanda S. Cramer, Justin A. Rectenwald, William B. Lewis*, Michael Hazelbaker, Alex Jackson, Holly Lott, Geoffry Beane, D. Clay Sisson, and James A. Martin
+Authors: Amanda S. Cramer, Justin A. Rectenwald, William B. Lewis*, Michael A. Hazelbaker, Alexander L. Jackson, Holly Lott, Geoff Beane, D. Clay Sisson, Melanie R. Kunkel, Nicole M. Nemeth, and James A. Martin
 * corresponding author: William B. Lewis, University of Georgia, wblewis7@gmail.com
 ---
 
 ---
 
 # Metadata
+
+Data to estimate crippling loss in northern bobwhite (Colinus virginianus) were collected over 3 consecutive winters (2021-2022, 2022-2023, and 2023-2024) at four sites in the Southeastern United States: Central Florida (CF), Tall Timbers (TT), Livingston Place (LP), and the Albany Quail Project (AQP). Crippling loss was assessed through two methods: 1) a multistate survvial model incorporating radiotelemetry and harvest data to estimate survival and crippling loss; and 2) a binomial regression model estimating crippling loss from field observations of th number of birds crippled vs. recovered.
 
 # NOBO.multistate.criploss.data.gzip
 Data for estimating survival, harvest mortality, and crippling loss with multistate survival models for populations of northern bobwhite (Colinus virginianus) in the Southeastern United States are stored in the file "NOBO.multistate.criploss.data.gzip". Data were collected at four study sites: Central Florida (CF), Tall Timbers (TT), Livingston Place (LP), and the Albany Quail Project (AQP). Data were also collected over 3 consecutive winters (2021-2022, 2022-2023, and 2023-2024). Birds were captured in the fall (October-Novemeber) and deployed with radiotransmitters. Birds were tracked every few days over 120-day periods (November-February) in each year. Harvest occurred periodically at each site and within each year, with records kept of birds killed and which birds were shot at on a given day.

@@ -23,7 +23,7 @@ For each bird, we estimate the latent ecological state for each day between the 
 We define three ecological states: 
 1. Alive
 2. Dead from harvest
-3. Dead from natural causes <br>
+3. Dead from natural causes  
 We model birds as transitioning from state 1 to 2 based on the daily harvest mortality rate (theta), and from 1 to 3 based on surviving harvest (1-theta) and succumbing to natural sources of mortality (1-phi). We model phi based on site-specific intercepts and year effects. We model theta as declining exponentially based on the number of days since the bird was last shot at by hunters (D). We assume that the risk of harvest mortality will decline to near 0 by 2-weeks post-harvest, which we denote with an indicator variable (I) taking the value of 1 if the day is within 2-weeks of the hunt day. <br />
 Birds were only observed every few days; therefore, we use an indexing variable A to only include data likelihoods from days with observations. For each day of observations in A, we classify birds into 4 observation states based on the ecological state: <br />
 1. Observed alive via radiotelemetry
